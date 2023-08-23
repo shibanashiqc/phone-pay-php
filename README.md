@@ -54,9 +54,11 @@ $phone_pay->client->setRedirectUrl('https://site/phonepay/callback');
 $request = $phone_pay->getPaymentRequest(1, '1234567890', '1234567890', '9999999999');
 $redirect_url = $phone_pay->getPaymentRedirectUrl($request);
 echo $redirect_url; 
-    
-    // Redirect to the $redirect_url
+
 ```
+
+# redirect url to redirect your user to phonepay payment page complete the payment after payment complete phonepay will redirect to your callback url with payment details 
+
 
 ## License
 
