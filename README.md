@@ -1,6 +1,5 @@
 # phone-pay-php
 
-<<<<<<< HEAD
 
 Unofficial PHP library for [Phone Pay](https://developer.phonepe.com/v1/docs/api-integration).
 
