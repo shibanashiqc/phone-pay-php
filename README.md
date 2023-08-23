@@ -1,5 +1,6 @@
 # phone-pay-php
 
+<<<<<<< HEAD
 
 Unofficial PHP library for [Phone Pay](https://developer.phonepe.com/v1/docs/api-integration).
 
@@ -61,3 +62,17 @@ $phone_pay->client->setRedirectUrl('https://site/phonepay/callback');
 ## License
 
 The PhonePay PHP SDK is released under the MIT License. See [LICENSE](LICENSE) file for more details.
+=======
+# Read up here for getting started and understanding the payment flow with PhonePe: https://developer.phonepe.com/v1/docs/api-integration
+
+# This is a sample PHP code to help you get started with PhonePe Payment Gateway Integration.
+
+# Prerequisites 
+
+# 1. PHP 8.0.0 or above
+
+# Installation
+
+
+
+>>>>>>> aaa37ac3b0247d5f3adb5a293c49883ce8858f63
