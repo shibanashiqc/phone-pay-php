@@ -1,5 +1,6 @@
 # phone-pay-php
 
+# Laravel Sample Repo: [Click Here](https://github.com/shibanashiqc/phone-pay-test)
 
 Unofficial PHP library for [Phone Pay](https://developer.phonepe.com/v1/docs/api-integration).
 
