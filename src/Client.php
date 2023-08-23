@@ -143,5 +143,13 @@ class Client
         return $finalXHeader;
     }
     
+    public function generateSignatureForStatus($merchantId, $transactionId, $endpoint) : string
+    {
+        $saltKey = self::$saltKey;
+        $saltIndex = self::$saltIndex;
+        $finalXHeader = hash('sha256',$endpoint.$merchantId.'/'.$transactionId.$saltKey).'###'.$saltIndex;
+        return $finalXHeader;
+    }
+    
 }
 

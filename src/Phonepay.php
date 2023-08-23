@@ -54,6 +54,39 @@ class PhonePay{
     {
         return isset($request['data']) ? $request['data']['instrumentResponse']['redirectInfo']['url'] : '';
     }
+        
+    /**
+     * checkPaymentStatus
+     *
+     * @param  mixed $merchantId
+     * @param  mixed $merchantTransactionId
+     * @return void
+     */
+    public function checkPaymentStatus($merchantId, $merchantTransactionId) 
+    {
+        $signature = $this->client->generateSignatureForStatus($merchantId, $merchantTransactionId, '/pg/v1/status/');
+        $this->request->addHeader('X-VERIFY', $signature);
+        $this->request->addHeader('X-MERCHANT-ID', $merchantTransactionId);
+        $request = $this->request->request('/pg/v1/status/' . $merchantId . '/' . $merchantTransactionId, [], 'GET');
+        return $request;
+    }
     
+    public function refund($merchantTransactionId, $amount, $merchantUId,) 
+    {
+        $data = [
+            'merchantId' => $this->client->getMerchantId(),
+            'merchantUserId' => $merchantUId,
+            'merchantTransactionId' => ($merchantTransactionId),
+            'originalTransactionId' => strrev($merchantTransactionId),
+            'amount' => $amount * 100,
+            'callbackUrl' => $this->client->getRedirectUrl(),
+         ];
+        
+        $encode = base64_encode(json_encode($data));
+        $signature = $this->client->generateSignature($encode, '/pg/v1/refund');
+        $this->request->addHeader('X-VERIFY', $signature);
+        $request = $this->request->request('/pg/v1/refund', ['request' => $encode]);
+        return $request;
+    }
     
 }

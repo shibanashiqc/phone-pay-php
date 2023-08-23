@@ -50,12 +50,12 @@ class Request  {
      * @param  mixed $body
      *
      */
-    public  function request($endpoint, $body = [], $signature = null) 
+    public  function request($endpoint, $body = [], $method = 'POST') 
     {
         $headers = self::getHeaders();
         try {
         $client = new \GuzzleHttp\Client();
-        $requests = new \GuzzleHttp\Psr7\Request('POST', Client::$baseUrl. $endpoint, $headers, json_encode($body));
+        $requests = new \GuzzleHttp\Psr7\Request($method, Client::$baseUrl. $endpoint, $headers, json_encode($body));
         $res = $client->sendAsync($requests)->wait();
         $res = json_decode($res->getBody(), true);
         return $res;
