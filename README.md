@@ -50,6 +50,10 @@ $phone_pay->client->setRedirectUrl('https://site/phonepay/callback');
 
 ### Create a Payment
 
+getPaymentRequest() on this function first parameter is amount, second parameter is merchant transaction id, third parameter is user unique id, fourth parameter is user mobile number
+only required parameter is amount other parameter is optional
+
+
 ```php
 $request = $phone_pay->getPaymentRequest(1, '1234567890', '1234567890', '9999999999');
 $redirect_url = $phone_pay->getPaymentRedirectUrl($request);
