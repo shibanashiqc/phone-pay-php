@@ -57,7 +57,7 @@ echo $redirect_url;
 
 ```
 
-# redirect url to redirect your user to phonepay payment page complete the payment after payment complete phonepay will redirect to your callback url with payment details 
+redirect url to redirect your user to phonepay payment page complete the payment after payment complete phonepay will redirect to your callback url with payment details 
 
 
 ## License
