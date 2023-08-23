@@ -6,7 +6,7 @@ Unofficial PHP library for [Phone Pay](https://developer.phonepe.com/v1/docs/api
 Read up here for getting started and understanding the payment flow with PhonePay: <https://developer.phonepe.com/v1/docs/api-integration>
 
 ### Prerequisites
-- A minimum of PHP 8.0 is required.
+- A minimum of PHP 8.1 is required.
 
 
 ## Installation
