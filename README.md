@@ -51,9 +51,9 @@ $phone_pay->client->setRedirectUrl('https://site/phonepay/callback');
 ### Create a Payment
 
 ```php
-    $request = $phone_pay->getPaymentRequest(1, '1234567890', '1234567890', '9999999999');
-    $redirect_url = $phone_pay->getPaymentRedirectUrl($request);
-    echo $redirect_url; 
+$request = $phone_pay->getPaymentRequest(1, '1234567890', '1234567890', '9999999999');
+$redirect_url = $phone_pay->getPaymentRedirectUrl($request);
+echo $redirect_url; 
     
     // Redirect to the $redirect_url
 ```
