@@ -3,7 +3,7 @@
 namespace Shibanashiqc\PhonePay;
 
 use Shibanashiqc\PhonePay\Client;
-use Shibanashiqc\PhonePay\Request;
+use Shibanashiqc\PhonePay\Request; 
 
 class PhonePay{    
     public $client;
