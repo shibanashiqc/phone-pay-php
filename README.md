@@ -42,7 +42,7 @@ Required parameters for the constructor are:
 Merchant ID, Merchant Salt Key, Environment
 
 ```php
-use Shibanashiqc\PhonePay\PhonePay;
+use Shibanashiqc\PhonePayPhp\PhonePay;
 
 $phone_pay = new PhonePay('MERCHAN', 'saltKey-0000', 1);
 $phone_pay->client->setCallbackUrl('https://site/phonepay/callback');
