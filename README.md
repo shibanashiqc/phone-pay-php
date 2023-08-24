@@ -25,7 +25,7 @@ composer require shibanashiqc/phone-pay-php
 ##Note:
 This PHP library follows the following practices:
 
-- Namespaced under `Shibanashiqc\PhonePay\`
+- Namespaced under `Shibanashiqc\PhonePayPhp\`
 - API throws exceptions instead of returning errors
 - Options are passed as an array instead of multiple arguments wherever possible
 - All requests and responses are communicated over JSON
