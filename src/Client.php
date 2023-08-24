@@ -1,6 +1,6 @@
 <?php
 
-namespace Shibanashiqc\PhonePay;
+namespace Shibanashiqc\PhonePayPhp;
 
 class Client
 {

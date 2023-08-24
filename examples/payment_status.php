@@ -1,6 +1,6 @@
 <?php 
 
-use Shibanashiqc\PhonePay\PhonePay;
+use Shibanashiqc\PhonePayPhp\PhonePay;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 

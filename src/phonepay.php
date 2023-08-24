@@ -1,9 +1,9 @@
 <?php
 
-namespace Shibanashiqc\PhonePay;
+namespace Shibanashiqc\PhonePayPhp;
 
-use Shibanashiqc\PhonePay\Client;
-use Shibanashiqc\PhonePay\Request; 
+use Shibanashiqc\PhonePayPhp\Client;
+use Shibanashiqc\PhonePayPhp\Request; 
 
 class PhonePay{    
     public $client;

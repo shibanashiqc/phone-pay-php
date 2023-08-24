@@ -1,6 +1,6 @@
 <?php
 
-namespace Shibanashiqc\PhonePay;
+namespace Shibanashiqc\PhonePayPhp;
 
 use PHPUnit\Framework\TestCase as PhpUnitTest;
 
