@@ -2,9 +2,9 @@
 
 # Laravel Sample Repo: [Click Here](https://github.com/shibanashiqc/phone-pay-test)
 
-Unofficial PHP library for [Phone Pay](https://developer.phonepe.com/v1/docs/api-integration).
+Unofficial PHP library for [PhonePe](https://developer.phonepe.com/v1/docs/api-integration).
 
-Read up here for getting started and understanding the payment flow with PhonePay: <https://developer.phonepe.com/v1/docs/api-integration>
+Read up here for getting started and understanding the payment flow with PhonePe: <https://developer.phonepe.com/v1/docs/api-integration>
 
 ### Prerequisites
 - A minimum of PHP 8.1 is required.
@@ -32,7 +32,7 @@ This PHP library follows the following practices:
 
 ## Documentation
 
-Documentation of PhonePay's API and their usage is available at <https://developer.phonepe.com/v1/docs/api-integration>
+Documentation of PhonePe's API and their usage is available at <https://developer.phonepe.com/v1/docs/api-integration>
 
 ## Basic Usage
 
