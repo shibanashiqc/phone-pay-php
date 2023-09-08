@@ -38,6 +38,7 @@ class PhonePay{
         ];
         
         $encode = base64_encode(json_encode($data));
+        
         $signature = $this->client->generateSignature($encode, '/pg/v1/pay');
         $this->request->addHeader('X-VERIFY', $signature);
         $request = $this->request->request('/pg/v1/pay', ['request' => $encode]);
@@ -66,7 +67,8 @@ class PhonePay{
     {
         $signature = $this->client->generateSignatureForStatus($merchantId, $merchantTransactionId, '/pg/v1/status/');
         $this->request->addHeader('X-VERIFY', $signature);
-        $this->request->addHeader('X-MERCHANT-ID', $merchantTransactionId);
+        $this->request->addHeader('X-MERCHANT-ID', $merchantId);
+        $this->request->addHeader('Content-Type', 'application/json');
         $request = $this->request->request('/pg/v1/status/' . $merchantId . '/' . $merchantTransactionId, [], 'GET');
         return $request;
     }
