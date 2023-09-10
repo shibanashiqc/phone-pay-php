@@ -4,6 +4,7 @@ use Shibanashiqc\PhonePayPhp\PhonePay;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$phone_pay = new PhonePay('MERCHANTUAT', '099eb0cd-02cf-4e2a-8aca-3e6c6aff0399', 1);
-echo json_encode($phone_pay->checkPaymentStatus('MERCHANTUAT', '1234567890'));
+$phone_pay = new phonePay('MERCHANTUAT', '34c6bffa-6338-4769-9a1c-2384f8818877', 1);
+// $phone_pay->client->setAsDefaultBaseUrl(); // if you got production keys the  use this 
+echo json_encode($phone_pay->checkPaymentStatus('MERCHANTUAT', '64facc1890467'));
 

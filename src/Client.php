@@ -11,6 +11,7 @@ class Client
     protected static $reredirectUrl = null;
     protected static $callbackUrl = null;
     
+    protected static $produtionUrl = 'https://api.phonepe.com/apis/hermes';
         
     /**
      * __construct
@@ -36,6 +37,11 @@ class Client
     public function setBaseUrl($baseUrl)
     {
         self::$baseUrl = $baseUrl;
+    }
+    
+    public function setAsDefaultBaseUrl()
+    {
+        self::$baseUrl = self::$produtionUrl;
     }
         
     /**
