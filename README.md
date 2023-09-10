@@ -45,6 +45,7 @@ Merchant ID, Merchant Salt Key, Environment
 use Shibanashiqc\PhonePayPhp\PhonePay;
 
 $phone_pay = new PhonePay('MERCHAN', 'saltKey-0000', 1);
+// $phone_pay->client->setAsDefaultBaseUrl(); // if you got production keys the enable this
 $phone_pay->client->setCallbackUrl('https://site/phonepay/callback');
 $phone_pay->client->setRedirectUrl('https://site/phonepay/callback');
 ```
